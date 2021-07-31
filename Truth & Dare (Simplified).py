@@ -1,13 +1,26 @@
-# MODULES********************************
 import random
-import tkinter as tk
 from tkinter import *
 from tkinter import ttk
 
-# *****************************************
+main=Tk()
+main.config(bg='black')
+
+label=[]
+
+option=[]
+
+button=[]
+
+text=[]
+
+check=[]
+
+get_chance = ["TOP", "BOTTOM"]
+
+cbv0 = IntVar()
+cbv1 = IntVar()
 
 
-# TRUTH & DARE LIST************************
 truth_questions = [
     "Do you lie?",
     "What is the last thing you searched for online?",
@@ -515,7 +528,7 @@ truth_questions = [
     "Describe the worst date you’ve ever been on.",
     "If you could be fluent in one of these languages which would it be: Chinese, French or Russian?",
 ]
-dare_question = [
+dare_questions = [
     "Drink a weird combination of: ketchup and mustard and something else (nothing that will send people to the emergency, please!)",
     "Go on Facebook and write a really long rant.",
     "Try counting backwards from 100 in multiples of three.",
@@ -819,272 +832,131 @@ dare_question = [
     "Put a Skittle or M&M in the belly button of the person across from you and eat it.",
     "Propose to the last person you sent a text message to.",
 ]
-# *****************************************
 
 
-# MAIN************************************
+def restart():
+	for i in range(num):
+		player_lst[i]=''
+	for i in [button[0],text[0],text[1],button[2]]:
+		i.config(state='normal')
+		i.place_forget()
+	for i,c in zip([text[0],text[1]],[check[0],check[1]]):
+		i.delete("1.0","end")
+		c.grid_forget()
+	button[0].config(text='NEXT',command=get)
+	label[0].config(text='How Many Players :')
+	for i,x in zip([label[0],combobox],[500,400]):
+		i.grid(row=0,columnspan=4,sticky='s',pady=x,padx=300)
+	button[1].grid()
 
 
-main = Tk()
-main.configure(bg="black")
+def CB():
+	if cbv0.get() or cbv1.get():
+		button[0].config(state='normal')
+		for i in range(2):
+			check[i].config(state='disable')
+		if cbv0.get()== 1:
+			truth()
+		elif cbv1.get()==1:
+			dare()
 
 
-# QUIT BUTTON*****************************
-quit = Button(main, bd=5, bg="black", fg="white", text="QUIT", command=main.destroy)
-quit.pack()
-quit.place(x=-1, y=1400)
-# *****************************************
+def dare():
+	text[1].config(state='normal')
+	text[1].delete("1.0", "end")
+	text[1].insert(END, "TRY GIVING BELOW..\n\n")
+	Dare=random.sample(dare_questions,5)
+	for i in range(5):
+		text[1].insert(END,f"#{i+1} {Dare[i]}\n")
+	text[1].config(state='disable')
 
 
-# GAME NAME******************************
-lable0 = Label(
-    main, text="TRUTH", bg="black", fg="green", font=("Helvetica", 23, "bold", "italic")
-)
-lable1 = Label(
-    main, text="&", bg="black", fg="white", font=("Helvetica", 23, "bold", "italic")
-)
-lable2 = Label(
-    main, text="DARE", bg="black", fg="red", font=("Helvetica", 23, "bold", "italic")
-)
-lable0.place(x=99, y=600)
-lable1.place(x=530, y=600)
-lable2.place(x=650, y=600)
-# *****************************************
+def truth():
+	text[1].config(state='normal')
+	text[1].delete("1.0", "end")
+	text[1].insert(END, "TRY ASKING BELOW..\n\n")
+	Truth=random.sample(truth_questions,5)
+	for i in range(5):
+		text[1].insert(END,f"#{i+1} {Truth[i]}\n")
+	text[1].config(state='disable')
 
 
-# COMBOBOX*******************************
-lable3 = Label(
-    main, text="How Many Players :", bg="black", fg="white", font=("Helvetica", 10)
-)
-lable3.place(x=300, y=830)
-option = []
-for i in range(2, 101):
-    option.append(i)
-combobox = ttk.Combobox(main, values=option)
-combobox["state"] = "readonly"
-main.option_add("*TCombobox*Listbox*Background", "black")
-main.option_add("*TCombobox*Listbox*foreground", "white")
-combobox.pack()
-combobox.place(x=280, y=920)
-# *****************************************
+def play():
+	choose_player=random.sample(player_lst,2)
+	choose_chance=random.sample(get_chance,2)
+	text[1].config(state='normal')
+	text[1].delete("1.0", "end")
+	text[1].insert(END,f"{choose_player[0]} Got {choose_chance[0]} & {choose_player[1]} Got {choose_chance[1]}.")
+	if choose_chance[0]=='BOTTOM':
+		text[1].insert(END,f"\n\nIt's {choose_player[0]} Chance To Ask TRUTH\nOr Give DARE To {choose_player[1]}.\n\n{choose_player[0]} Which One Will You Give ?\nTRUTH Or DARE.")
+	elif choose_chance[1]=='BOTTOM':
+		text[1].insert(END,f"\n\nIt's {choose_player[1]} Chance To Ask TRUTH\nOr Give DARE To {choose_player[0]}.\n\n{choose_player[1]} Which One Will You Give ?\nTRUTH Or DARE.")
+	for i,c in zip([cbv0,cbv1],[text[1],button[0]]):
+		i.set(0)
+		c.config(state='disable')
+	for i in range(2):
+		check[i].grid(row=0,column=i,sticky='s',pady=400,columnspan=2)
+		check[i].config(command=CB,state='normal')
 
 
-# MAIN FUNCTION***************************
+def get2():
+	entry=Input.get()
+	f=re.sub('[0-9]','',entry)
+	f=re.sub('[^\\w]','',f)
+	f=' '.join(f.split()).title()
+	player_lst.append(f)
+	player_lst.remove('')
+	Input.delete(0,END)
+	if '' not in player_lst:
+		for i in [label[1],Input,label[0]]:
+			i.grid_forget()
+		text[0].place(x=0,y=0)
+		text[0].insert(END,f'TOTAL PLAYERS : {num}\nPLAYERS NAME : {",".join(player_lst)}')
+		for i in [text[0],text[1]]:
+			i.config(state='disable')
+		for i,x,y in zip([button[1],button[2],text[1]],[0,767,0],[1391,1391,1500]):
+			i.place(x=x,y=y)
+		button[0].config(command=play,text='SPIN')
 
 
-def main_function():
-    try:
-        i = int(combobox.get())
-        lable3.config(text="Enter Players Name :")
-        lable3.place(x=300, y=830)
-        players_list = [""] * i
-        combobox.destroy()
-        input = Entry(main)
-        input.pack()
-        input.place(x=290, y=920)
-        lable4.config(
-            text="\nnote:-\ndo not include any special characters\nexcept(_)(underscore) or any numbers in the name\nor it will be removed..\n".title()
-        )
-        lable4.place(x=0, y=0)
-
-        # ZERO FUNCTION***********************
-        def function0():
-            x = input.get()
-            x = re.sub(r"[0-9]", "", x)
-            x = re.sub(r"[^\w]", "", x)
-            x = (" ".join(x.split())).title()
-            players_list.append(x)
-            players_list.remove("")
-            input.delete(0, END)
-            if "" not in players_list:
-                lable3.destroy()
-                Output1.pack()
-                scroll.pack(fill=X)
-                scroll.config(command=Output1.xview)
-                Output1.insert(
-                    END,
-                    "TOTAL PLAYERS : "
-                    + str(i)
-                    + "\nPLAYERS NAME : "
-                    + ",".join(players_list),
-                )
-                # *****************************************
-
-                # FIRST FUNCTION***************************
-                def function1():
-                    button0.config(state=DISABLED)
-                    while True:
-                        get_chance = ["TOP", "BOTTOM"]
-                        global chance, chance1, choose, choose1
-                        choose0 = random.choice(players_list)
-                        chance0 = random.choice(get_chance)
-                        choose1 = random.choice(players_list)
-                        chance1 = random.choice(get_chance)
-                        if choose0 == choose1 or chance0 == chance1:
-                            button0.config(state=NORMAL)
-                            Output0.delete("1.0", "end")
-                            Output0.insert(END, "Spin Again..")
-                            break
-                        else:
-                            Output0.delete("1.0", "end")
-                            Output0.insert(
-                                END,
-                                choose0
-                                + " Got "
-                                + chance0
-                                + " & "
-                                + choose1
-                                + " Got "
-                                + chance1
-                                + "\n",
-                            )
-                            if chance0 == "BOTTOM":
-                                Output0.insert(
-                                    END,
-                                    "\nIt's "
-                                    + choose0
-                                    + " Chance To Ask TRUTH\nOr Give DARE To "
-                                    + choose1
-                                    + "\n\n"
-                                    + choose0
-                                    + " Which One Will You Give ?\nTRUTH (t) Or DARE (d)",
-                                )
-                            if chance1 == "BOTTOM":
-                                Output0.insert(
-                                    END,
-                                    "\nIt's "
-                                    + choose1
-                                    + " Chance To Ask TRUTH\nOr Give DARE To "
-                                    + choose0
-                                    + "\n\n"
-                                    + choose1
-                                    + " Which One Will You Give ?\nTRUTH (t) Or DARE (d)",
-                                )
-                            break
-                    # *****************************************
-
-                    # SECOND (TRUTH) FUNCTION*****************
-                    def truth():
-                        Output0.delete("1.0", "end")
-                        Output0.insert(END, "TRY ASKING BELOW..\n\n")
-                        while True:
-                            truthq0 = random.choice(truth_questions)
-                            truthq1 = random.choice(truth_questions)
-                            truthq2 = random.choice(truth_questions)
-                            truthq3 = random.choice(truth_questions)
-                            truthq4 = random.choice(truth_questions)
-                            if truthq0 == truthq1 or truthq2 or truthq3 or truthq4:
-                                Output0.insert(END, "#1 " + truthq0 + " \n")
-                            if truthq1 == truthq0 or truthq2 or truthq3 or truthq4:
-                                Output0.insert(END, "#2 " + truthq1 + " \n")
-                            if truthq2 == truthq0 or truthq1 or truthq3 or truthq4:
-                                Output0.insert(END, "#3 " + truthq2 + " \n")
-                            if truthq3 == truthq0 or truthq1 or truthq2 or truthq4:
-                                Output0.insert(END, "#4 " + truthq3 + " \n")
-                            if truthq4 == truthq0 or truthq1 or truthq2 or truthq3:
-                                Output0.insert(END, "#5 " + truthq4 + " \n")
-                                break
-
-                    # *****************************************
-
-                    # THIRD (DARE) FUNCTION********************
-                    def dare():
-                        Output0.delete("1.0", "end")
-                        Output0.insert(END, "TRY GIVING BELOW..\n\n")
-                        while True:
-                            dareq0 = random.choice(dare_question)
-                            dareq1 = random.choice(dare_question)
-                            dareq2 = random.choice(dare_question)
-                            dareq3 = random.choice(dare_question)
-                            dareq4 = random.choice(dare_question)
-                            if dareq0 == dareq1 or dareq2 or dareq3 or dareq4:
-                                Output0.insert(END, "#1 " + dareq0 + " \n")
-                            if dareq1 == dareq0 or dareq2 or dareq3 or dareq4:
-                                Output0.insert(END, "#2 " + dareq1 + " \n")
-                            if dareq2 == dareq0 or dareq1 or dareq3 or dareq4:
-                                Output0.insert(END, "#3 " + dareq2 + " \n")
-                            if dareq3 == dareq0 or dareq1 or dareq2 or dareq4:
-                                Output0.insert(END, "#4 " + dareq3 + " \n")
-                            if dareq4 == dareq0 or dareq1 or dareq2 or dareq3:
-                                Output0.insert(END, "#5 " + dareq4 + " \n")
-                                break
-
-                    # *****************************************
-
-                    # FOURTH FUNCTION************************
-                    def function2():
-                        if cbv0.get() == 1:
-                            truth()
-                            button0.config(state=NORMAL)
-                            checkbutton0["state"] = DISABLED
-                            checkbutton1["state"] = DISABLED
-                        elif cbv1.get() == 1:
-                            dare()
-                            button0.config(state=NORMAL)
-                            checkbutton0["state"] = DISABLED
-                            checkbutton1["state"] = DISABLED
-
-                    cbv0 = IntVar()
-                    cbv1 = IntVar()
-                    checkbutton0 = Checkbutton(
-                        main,
-                        text="TRUTH",
-                        variable=cbv0,
-                        onvalue=True,
-                        offvalue=False,
-                        command=function2,
-                        bg="black",
-                        fg="green",
-                    )
-                    checkbutton0.pack()
-                    checkbutton0.place(x=199, y=900)
-                    checkbutton1 = Checkbutton(
-                        main,
-                        text="DARE",
-                        variable=cbv1,
-                        onvalue=True,
-                        offvalue=False,
-                        command=function2,
-                        bg="black",
-                        fg="red",
-                    )
-                    checkbutton1.pack()
-                    checkbutton1.place(x=699, y=900)
-                    if choose0 == choose1 or chance0 == chance1:
-                        checkbutton0.config(state=DISABLED)
-                        checkbutton1.config(state=DISABLED)
-
-                # *****************************************
-
-                button0.config(text="SPIN", command=function1)
-                Output0.place(x=-1, y=1500)
-                input.destroy()
-                lable4.config(text="")
-
-        button0.config(command=function0)
-        button0.place(x=440, y=1100)
-    except ValueError:
-        lable4.config(text="Above Field Cannot Be Empty...")
-        lable4.place(x=250, y=1030)
+def get():
+	global num
+	num=int(combobox.get())
+	global player_lst
+	player_lst=['']*num
+	label[0].config(text='Enter Players Name')
+	combobox.grid_forget()
+	global Input
+	Input=Entry(main,width=16)
+	for i,s,y,p in zip([Input,label[1]],['s','n'],[400,0],[300,10]):
+		i.grid(row=0,columnspan=4,sticky=s,pady=y,padx=p)
+	label[1].config(text='\nnote:-\ndo not include any special characters\nexcept(_)(underscore) or any numbers in the\nname or it will be removed..\n'.title())
+	button[0].config(command=get2)
 
 
-# *****************************************
+for x,y,z,n,c in zip(['   TRUTH','&','DARE      '],['green','white','red'],[0,1,2],['NEXT','EXIT','RESTART'],[get,main.destroy,restart]):
+	Label(main,text=x,fg=y,bg='black',font=('Helvetica',23,'bold','italic')).grid(row=0,column=z,pady=630)
+	btn=Button(main,text=n,fg='white',bg='black',bd=10,command=c)
+	button.append(btn)
 
+for i,s,x,y,h,n,c,o in zip(['How Many Players :',''],[10,8],['NEXT','EXIT'],[get,restart],[2,10],['TRUTH','DARE'],[cbv0,cbv1],['green','red']):
+	l=Label(main,text=i,fg='white',bg='black',font=('Helvetica',s))
+	txt=Text(main,wrap=NONE,width=44,bg='black',fg='white',height=h)
+	cb = Checkbutton(main,text=n,variable=c,onvalue=True,offvalue=False,bg="black",fg=o)
+	check.append(cb)
+	label.append(l)
+	text.append(txt)
 
-# BUTTONS,TEXT,LABEL WIDGETS**************
-button0 = Button(
-    main, text="NEXT", bg="black", fg="white", bd=10, command=main_function
-)
-button0.pack()
-button0.place(x=440, y=1100)
-lable4 = Label(main, text="", bg="black", fg="white")
-lable4.pack()
-Output0 = Text(main, wrap=NONE, height=10, width=44, bg="black", fg="white")
-scroll = Scrollbar(main, bg="black", orient="horizontal")
-Output1 = Text(
-    main, wrap=NONE, xsc=scroll.set, height=2, width=44, bg="black", fg="white"
-)
-Output0.bind("<Key>", lambda a: "break")
-Output1.bind("<Key>", lambda a: "break")
+for i in range(2,11):
+	option.append(i)
+
+combobox=ttk.Combobox(main,values=option,width=16)
+combobox['state']='readonly'
+combobox.current(0)
+main.option_add('*TCombobox*Listbox*Background','black')
+main.option_add('*TCombobox*Listbox*foreground','white')
+
+for i,x in zip([label[0],combobox,button[0],button[1]],[500,400,200,0]):
+	i.grid(row=0,columnspan=4,sticky='s',pady=x,padx=300)
+
 mainloop()
-# ****************************************
