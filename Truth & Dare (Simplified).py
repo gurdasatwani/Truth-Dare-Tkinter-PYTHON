@@ -2,18 +2,18 @@ import random
 from tkinter import *
 from tkinter import ttk
 
-main=Tk()
-main.config(bg='black')
+main = Tk()
+main.config(bg="black")
 
-label=[]
+label = []
 
-option=[]
+option = []
 
-button=[]
+button = []
 
-text=[]
+text = []
 
-check=[]
+check = []
 
 get_chance = ["TOP", "BOTTOM"]
 
@@ -835,128 +835,162 @@ dare_questions = [
 
 
 def restart():
-	for i in range(num):
-		player_lst[i]=''
-	for i in [button[0],text[0],text[1],button[2]]:
-		i.config(state='normal')
-		i.place_forget()
-	for i,c in zip([text[0],text[1]],[check[0],check[1]]):
-		i.delete("1.0","end")
-		c.grid_forget()
-	button[0].config(text='NEXT',command=get)
-	label[0].config(text='How Many Players :')
-	for i,x in zip([label[0],combobox],[500,400]):
-		i.grid(row=0,columnspan=4,sticky='s',pady=x,padx=300)
-	button[1].grid()
+    for i in range(num):
+        player_lst[i] = ""
+    for i in [button[0], text[0], text[1], button[2]]:
+        i.config(state="normal")
+        i.place_forget()
+    for i, c in zip([text[0], text[1]], [check[0], check[1]]):
+        i.delete("1.0", "end")
+        c.grid_forget()
+    button[0].config(text="NEXT", command=get)
+    label[0].config(text="How Many Players :")
+    for i, x in zip([label[0], combobox], [500, 400]):
+        i.grid(row=0, columnspan=4, sticky="s", pady=x, padx=300)
+    button[1].grid()
 
 
 def CB():
-	if cbv0.get() or cbv1.get():
-		button[0].config(state='normal')
-		for i in range(2):
-			check[i].config(state='disable')
-		if cbv0.get()== 1:
-			truth()
-		elif cbv1.get()==1:
-			dare()
+    if cbv0.get() or cbv1.get():
+        button[0].config(state="normal")
+        for i in range(2):
+            check[i].config(state="disable")
+        if cbv0.get() == 1:
+            truth()
+        elif cbv1.get() == 1:
+            dare()
 
 
 def dare():
-	text[1].config(state='normal')
-	text[1].delete("1.0", "end")
-	text[1].insert(END, "TRY GIVING BELOW..\n\n")
-	Dare=random.sample(dare_questions,5)
-	for i in range(5):
-		text[1].insert(END,f"#{i+1} {Dare[i]}\n")
-	text[1].config(state='disable')
+    text[1].config(state="normal")
+    text[1].delete("1.0", "end")
+    text[1].insert(END, "TRY GIVING BELOW..\n\n")
+    Dare = random.sample(dare_questions, 5)
+    for i in range(5):
+        text[1].insert(END, f"#{i+1} {Dare[i]}\n")
+    text[1].config(state="disable")
 
 
 def truth():
-	text[1].config(state='normal')
-	text[1].delete("1.0", "end")
-	text[1].insert(END, "TRY ASKING BELOW..\n\n")
-	Truth=random.sample(truth_questions,5)
-	for i in range(5):
-		text[1].insert(END,f"#{i+1} {Truth[i]}\n")
-	text[1].config(state='disable')
+    text[1].config(state="normal")
+    text[1].delete("1.0", "end")
+    text[1].insert(END, "TRY ASKING BELOW..\n\n")
+    Truth = random.sample(truth_questions, 5)
+    for i in range(5):
+        text[1].insert(END, f"#{i+1} {Truth[i]}\n")
+    text[1].config(state="disable")
 
 
 def play():
-	choose_player=random.sample(player_lst,2)
-	choose_chance=random.sample(get_chance,2)
-	text[1].config(state='normal')
-	text[1].delete("1.0", "end")
-	text[1].insert(END,f"{choose_player[0]} Got {choose_chance[0]} & {choose_player[1]} Got {choose_chance[1]}.")
-	if choose_chance[0]=='BOTTOM':
-		text[1].insert(END,f"\n\nIt's {choose_player[0]} Chance To Ask TRUTH\nOr Give DARE To {choose_player[1]}.\n\n{choose_player[0]} Which One Will You Give ?\nTRUTH Or DARE.")
-	elif choose_chance[1]=='BOTTOM':
-		text[1].insert(END,f"\n\nIt's {choose_player[1]} Chance To Ask TRUTH\nOr Give DARE To {choose_player[0]}.\n\n{choose_player[1]} Which One Will You Give ?\nTRUTH Or DARE.")
-	for i,c in zip([cbv0,cbv1],[text[1],button[0]]):
-		i.set(0)
-		c.config(state='disable')
-	for i in range(2):
-		check[i].grid(row=0,column=i,sticky='s',pady=400,columnspan=2)
-		check[i].config(command=CB,state='normal')
+    choose_player = random.sample(player_lst, 2)
+    choose_chance = random.sample(get_chance, 2)
+    text[1].config(state="normal")
+    text[1].delete("1.0", "end")
+    text[1].insert(
+        END,
+        f"{choose_player[0]} Got {choose_chance[0]} & {choose_player[1]} Got {choose_chance[1]}.",
+    )
+    if choose_chance[0] == "BOTTOM":
+        text[1].insert(
+            END,
+            f"\n\nIt's {choose_player[0]} Chance To Ask TRUTH\nOr Give DARE To {choose_player[1]}.\n\n{choose_player[0]} Which One Will You Give ?\nTRUTH Or DARE.",
+        )
+    elif choose_chance[1] == "BOTTOM":
+        text[1].insert(
+            END,
+            f"\n\nIt's {choose_player[1]} Chance To Ask TRUTH\nOr Give DARE To {choose_player[0]}.\n\n{choose_player[1]} Which One Will You Give ?\nTRUTH Or DARE.",
+        )
+    for i, c in zip([cbv0, cbv1], [text[1], button[0]]):
+        i.set(0)
+        c.config(state="disable")
+    for i in range(2):
+        check[i].grid(row=0, column=i, sticky="s", pady=400, columnspan=2)
+        check[i].config(command=CB, state="normal")
 
 
 def get2():
-	entry=Input.get()
-	f=re.sub('[0-9]','',entry)
-	f=re.sub('[^\\w]','',f)
-	f=' '.join(f.split()).title()
-	player_lst.append(f)
-	player_lst.remove('')
-	Input.delete(0,END)
-	if '' not in player_lst:
-		for i in [label[1],Input,label[0]]:
-			i.grid_forget()
-		text[0].place(x=0,y=0)
-		text[0].insert(END,f'TOTAL PLAYERS : {num}\nPLAYERS NAME : {",".join(player_lst)}')
-		for i in [text[0],text[1]]:
-			i.config(state='disable')
-		for i,x,y in zip([button[1],button[2],text[1]],[0,767,0],[1391,1391,1500]):
-			i.place(x=x,y=y)
-		button[0].config(command=play,text='SPIN')
+    entry = Input.get()
+    f = re.sub("[0-9]", "", entry)
+    f = re.sub("[^\\w]", "", f)
+    f = " ".join(f.split()).title()
+    player_lst.append(f)
+    player_lst.remove("")
+    Input.delete(0, END)
+    if "" not in player_lst:
+        for i in [label[1], Input, label[0]]:
+            i.grid_forget()
+        text[0].place(x=0, y=0)
+        text[0].insert(
+            END, f'TOTAL PLAYERS : {num}\nPLAYERS NAME : {",".join(player_lst)}'
+        )
+        for i in [text[0], text[1]]:
+            i.config(state="disable")
+        for i, x, y in zip(
+            [button[1], button[2], text[1]], [0, 767, 0], [1391, 1391, 1500]
+        ):
+            i.place(x=x, y=y)
+        button[0].config(command=play, text="SPIN")
 
 
 def get():
-	global num
-	num=int(combobox.get())
-	global player_lst
-	player_lst=['']*num
-	label[0].config(text='Enter Players Name')
-	combobox.grid_forget()
-	global Input
-	Input=Entry(main,width=16)
-	for i,s,y,p in zip([Input,label[1]],['s','n'],[400,0],[300,10]):
-		i.grid(row=0,columnspan=4,sticky=s,pady=y,padx=p)
-	label[1].config(text='\nnote:-\ndo not include any special characters\nexcept(_)(underscore) or any numbers in the\nname or it will be removed..\n'.title())
-	button[0].config(command=get2)
+    global num
+    num = int(combobox.get())
+    global player_lst
+    player_lst = [""] * num
+    label[0].config(text="Enter Players Name")
+    combobox.grid_forget()
+    global Input
+    Input = Entry(main, width=16)
+    for i, s, y, p in zip([Input, label[1]], ["s", "n"], [400, 0], [300, 10]):
+        i.grid(row=0, columnspan=4, sticky=s, pady=y, padx=p)
+    label[1].config(
+        text="\nnote:-\ndo not include any special characters\nexcept(_)(underscore) or any numbers in the\nname or it will be removed..\n".title()
+    )
+    button[0].config(command=get2)
 
 
-for x,y,z,n,c in zip(['   TRUTH','&','DARE      '],['green','white','red'],[0,1,2],['NEXT','EXIT','RESTART'],[get,main.destroy,restart]):
-	Label(main,text=x,fg=y,bg='black',font=('Helvetica',23,'bold','italic')).grid(row=0,column=z,pady=630)
-	btn=Button(main,text=n,fg='white',bg='black',bd=10,command=c)
-	button.append(btn)
+for x, y, z, n, c in zip(
+    ["   TRUTH", "&", "DARE      "],
+    ["green", "white", "red"],
+    [0, 1, 2],
+    ["NEXT", "EXIT", "RESTART"],
+    [get, main.destroy, restart],
+):
+    Label(
+        main, text=x, fg=y, bg="black", font=("Helvetica", 23, "bold", "italic")
+    ).grid(row=0, column=z, pady=630)
+    btn = Button(main, text=n, fg="white", bg="black", bd=10, command=c)
+    button.append(btn)
 
-for i,s,x,y,h,n,c,o in zip(['How Many Players :',''],[10,8],['NEXT','EXIT'],[get,restart],[2,10],['TRUTH','DARE'],[cbv0,cbv1],['green','red']):
-	l=Label(main,text=i,fg='white',bg='black',font=('Helvetica',s))
-	txt=Text(main,wrap=NONE,width=44,bg='black',fg='white',height=h)
-	cb = Checkbutton(main,text=n,variable=c,onvalue=True,offvalue=False,bg="black",fg=o)
-	check.append(cb)
-	label.append(l)
-	text.append(txt)
+for i, s, x, y, h, n, c, o in zip(
+    ["How Many Players :", ""],
+    [10, 8],
+    ["NEXT", "EXIT"],
+    [get, restart],
+    [2, 10],
+    ["TRUTH", "DARE"],
+    [cbv0, cbv1],
+    ["green", "red"],
+):
+    l = Label(main, text=i, fg="white", bg="black", font=("Helvetica", s))
+    txt = Text(main, wrap=NONE, width=44, bg="black", fg="white", height=h)
+    cb = Checkbutton(
+        main, text=n, variable=c, onvalue=True, offvalue=False, bg="black", fg=o
+    )
+    check.append(cb)
+    label.append(l)
+    text.append(txt)
 
-for i in range(2,11):
-	option.append(i)
+for i in range(2, 11):
+    option.append(i)
 
-combobox=ttk.Combobox(main,values=option,width=16)
-combobox['state']='readonly'
+combobox = ttk.Combobox(main, values=option, width=16)
+combobox["state"] = "readonly"
 combobox.current(0)
-main.option_add('*TCombobox*Listbox*Background','black')
-main.option_add('*TCombobox*Listbox*foreground','white')
+main.option_add("*TCombobox*Listbox*Background", "black")
+main.option_add("*TCombobox*Listbox*foreground", "white")
 
-for i,x in zip([label[0],combobox,button[0],button[1]],[500,400,200,0]):
-	i.grid(row=0,columnspan=4,sticky='s',pady=x,padx=300)
+for i, x in zip([label[0], combobox, button[0], button[1]], [500, 400, 200, 0]):
+    i.grid(row=0, columnspan=4, sticky="s", pady=x, padx=300)
 
 mainloop()
