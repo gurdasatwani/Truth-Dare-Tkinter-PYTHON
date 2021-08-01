@@ -909,6 +909,8 @@ def play():
 
 
 def get2():
+    for i in ["disable", "normal"]:
+        button[0].config(state=i)
     entry = Input.get()
     f = re.sub("[0-9]", "", entry)
     f = re.sub("[^\\w]", "", f)
@@ -941,8 +943,11 @@ def get():
     combobox.grid_forget()
     global Input
     Input = Entry(main, width=16)
-    for i, s, y, p in zip([Input, label[1]], ["s", "n"], [400, 0], [300, 10]):
+    for i, s, y, p, x in zip(
+        [Input, label[1]], ["s", "n"], [400, 0], [300, 10], ["disable", "normal"]
+    ):
         i.grid(row=0, columnspan=4, sticky=s, pady=y, padx=p)
+        button[0].config(state=x)
     label[1].config(
         text="\nnote:-\ndo not include any special characters\nexcept(_)(underscore) or any numbers in the\nname or it will be removed..\n".title()
     )
@@ -992,5 +997,4 @@ main.option_add("*TCombobox*Listbox*foreground", "white")
 
 for i, x in zip([label[0], combobox, button[0], button[1]], [500, 400, 200, 0]):
     i.grid(row=0, columnspan=4, sticky="s", pady=x, padx=300)
-
 mainloop()
