@@ -25,6 +25,13 @@ truth_questions = ['Do you lie?','What is the last thing you searched for online
 dare_questions = ['Drink a weird combination of: ketchup and mustard and something else (nothing that will send people to the emergency, please!)','Go on Facebook and write a really long rant.','Try counting backwards from 100 in multiples of three.','Do a handstand.','Do a cartwheel.','Do a downward dog.','Do an impression of everyone in the room','Drink hot sauce.','Go next door and ask the neighbor for 1 egg and half a teaspoon of sugar','Don’t speak for half an hour!','Hop on one leg for 5 minutes.','Call a random number and pretend to be someone else.','Do a weird dance in front of everyone.','Let everyone draw on your face.','Sing a song for everyone.','Let everyone give you a makeover.','Scream out the window while driving.','Harass people in an online fight.','Touch your toes.','Make out with your hand','Fake cry.','Slap yourself in the face.','Go through a garbage can.','Pick someone’s nose','Eat a spoonful of salt','Drink a mouthful of water and try to keep it in your mouth as the group shares funny stories.','Show Your Crush Social Media Account.','Strip naked and dance.','Call your mom and ask her how much she would charge for a “pleasurable favor” and mask your caller ID. Use a foreign accent.','Pretend to “drunk dial” your ex and say “meow bear.”','Drink an entire bottle of soda.','Let us blindfold you and tickle you!','Get naked and run around the room.','Make out with a vegetable.','Eat an entire box of cereal.','Drink a liter of soda.','Jump up and down and tell a story.','Make up a dance.','Pretend you’re a mermaid.','Don’t speak for 10 minutes.,Text X person something crazy','Go on Facebook and type “I love boobs.”','Make a really ugly cry face.','Tell your crush you like them.','Tell a fake story about a man named Ben.','Say something extremely politically incorrect about someone you hate.','“Moon” us.','Show us your phone and let us go through it for five minutes.','Let us read your Facebook messages.','Let us read your Snapchat.','Walk on all fours as if you’re a dog.','Call the last person in your call history and talk in a foreign accent. Then hang up.','Call two people from your contact list and start “meowing” at them. Then laugh and hang up.','Do your best Britney Spears imitation.','If you’re a guy, put on makeup.','If you’re a girl, take off all makeup.','Post an unfiltered, unattractive selfie on social media','Go to Youtube, find a live chat and start a fight.','Call a local pharmacy and ask if they have herpes medication.','Post something politically controversial on Facebook.','Post a comment on every single post on the first page of your Facebook feed.','Go on Facebook Live and talk about how much you love pizza for five minutes,Go hit on a man with a cheesy pickup line.','Take all your makeup off.','Let us have your phone to go through.','Let us see your texts.','Show us what’s in your purse.','Stand outside your house for a second in your underwear.','Fake an orgasm.','Drop a piece of jewelry into the toilet and then pick it up.','Post a rant about feminism on Facebook.','Rank your friends from most to least attractive.','Scream as loud as you can.,Do your best Michael Jackson impression.','Put on women’s underwear.','Call a drugstore and ask if they carry male period tampons.','Knock on your neighbor’s door and yell at them.','Call your best friend and ask if he enjoyed himself in the brothel last night using a blocked caller ID And speaking in a foreign accent.','Go outside in just your boxers and dance for 1 minute.','Do 20 push-ups.','Go outside in just underwear and do the Macarena.','Kiss the floor.','Throw a football.',"'Drink a weird recipe of ketchup and mayonnaise.",'Get in your car and do a “donut” peeling out of the house (warning: don’t get arrested).','Shave your armpits','Sing My Heart Will Go On with hand motions','Recite a love poem to the most attractive girl in the room','Talk like a girl for the rest of the game','Kiss the person to your right on the neck','Do a dance to the song “I’m too sexy.”','Let someone wax a part of your body.','Attempt to breakdance.,Kiss the person next to you.','Make out with the person across from you.','Start hopping on one leg.','Pretend you can’t talk and try to make a sentence using your body.','Go poke someone and walk away.','Lick the person nearest to you.','Lay on X person’s lap.','Dance alone for 15 minutes.','Jump up and down for 5 minutes.','Give the person to your right a foot massage.','Blindfold yourself and take a shot of whatever we choose.','Take your bra off and keep it off for the rest of the game.','Start twerking in the middle of the room.','Drink a glass of wine as if it’s water.,Do 15 jumping jacks.','Pretend to be a ballerina.','Put on a weird hat and make faces in the mirror.','Lie down and pretend you’re a fish.','Do your best impression of a president.','Bark like a dog for a minute.','Sing like no one is watching.','Make up a rap.','Pick someone’s nose.','Switch pants with someone of the opposite sex.','Pet someone as if they are a pet.','Crack an egg over your head','Tell someone you’re pregnant (if you’re a woman). And if you’re a guy tell someone you got a girl pregnant.','Eat a rose petal or some kind of flower.','Throw rocks at someone’s window gently (don’t hurt anyone!)','Talk only in animal sounds for the next 30 minutes.','Put on a blindfold and let the person next to you draw on you.','Let everyone draw on your back.','Call a radio station and say random things.','Do the cinnamon challenge','Go outside and do a rain dance','Speak only in rhyme','Go live on Facebook and sing “Let It Go” on the top of your lungs','Paint your eyebrows with peanut butter','Dance without music on for a full minute.,Touch me anywhere you want.','Take one article of clothing off of me. You decide.','Stare at me with my top off for two minutes without touching me.','Stare at me without any “bottoms” on but don’t touch me.','Get naked and let me stare at you.','Do anything you want to me.','Lick whipped cream off my body','Take a naked selfie and send it to your significant other','Do a sexy striptease','Completely cover yourself in toilet paper to look like a mummy.','Randomly call a person from your phone and sing them a song.','Call a family member of someone in the room and explain why you love your friend so much.','Run outside and shout as loud as you can, “I am the best person in the world!”','Mix all the sauces you have in your fridge and drink up.','Prank call a friend’s partner.','Call up a pizza place and order Chinese food.','Take a shower without removing any of your clothes.','Cover up your eyes (or wear a blindfold), and walk around the room for two minutes without watching where you’re going.','Impersonate someone in the room and people have to guess who it is.','Improvise and perform a two-minute comedy routine in front of everyone.','Act like a dog for two minutes without laughing.','Pour a freezing cold glass of water over your face without reacting.','Talk about something you regret in your life.','Tell a stranger walking past that you love them.','Put as many pieces of cheese puffs in your mouth at one time as you can.','Screenshot a picture of your browser history and send it to a random person in your contacts.','Log into Facebook and like every picture for the past year of the first person you see.','Rip off a piece of paper and eat it.','Take out an eat and eat it raw.','Cover your hair with milk and don’t wash off until the end of the game.','Text your mom the last picture saved on your phone.','Pretend to be a chicken for 30 seconds.','Stand up and run on the spot as fast as you can until it’s your turn.','Sniff the player to your right’s armpit.','Allow another player to throw flour in your face.','Allow a random player to tickle you for 30 seconds.','Kiss someone’s bare foot.','Go into the kitchen and take a bite out of something in the trash.','Spritz perfume into your mouth.','Head outside and lick a car tire.','Take a picture of yourself pulling a funny face and set it as your Facebook profile picture for the rest of the day and night.','Pass your phone to the person to your right and allow them to put any status on one of your social media accounts.','Let someone in the group give you a wedgie.','Grab a random object in the room and try and sell it to the group for two minutes.','Kiss the second person to your left on the lips.','Sing the chorus from a random song with all your heart.','Speak in a baby’s voice for the next five things you have to say.','Give someone in the group all the money you have in your purse.','Take someone’s socks off and wear them like gloves for three minutes.','Slap yourself in the face any time someone says “and” in the next three minutes.','Blindfold yourself and let someone in the group feed you something of their choosing.','Knock on your neighbor’s door and tell them how grateful they should be to live next to someone so awesome.','Try to lick your elbow for the next three minutes.','Laugh out loud at everything the person to your left says until it’s your turn.','Stand up and try to break dance.','Try to impersonate your favorite singer for one minute.','Pick out the best and worst dressed individuals in the group.','Act like you’re drunk for the rest of the game.','Hum a random song and you can’t stop until someone guesses what it is.','Let someone bite your finger until it hurts.','Attempt to keep your eyes as wind open as possible without blinking.','Open a book, newspaper or magazine, and sing two random sentences as best you can.','Show everyone the four most recent pictures on your phone.','Write and perform a song that is at least two minutes long.','Ring a random person from your phone and confess that you’re in love with a fictional character.','Hold your breath for as long as you can.','Apply makeup without looking in the mirror.','Let a player write something on your head and don’t wipe it off until the end of the game.','Hold a plank for as long as you can.','Do as many sit-ups as you can in one minute.','Trade one item of clothing with another player and wear for the rest of the game.','Try to sing a song with your mouth full of a drink.','Eat a spoonful of a spicy sauce.','Hold mouthwash in your mouth for as long as possible (extra minty flavors work best for this!).','Let any player give you a wet willy.','Allow the second player to your right to make an alcoholic drink and you have to drink it as fast as you can.','Completely shave off one of your eyebrows.','Let someone wax half of your leg.','Nibble at another player’s fingernails.','Go outside and ask a stranger to smell your breath.','Eat an entire onion without crying.','Allow another player to cut a small chunk out of your hair.','Massage another player’s back for five minutes.','Sit among other players wearing only your underwear.','Let another player keep any item of clothing from your wardrobe.','Try to juggle with three eggs.','Spank the person to your right.','Confess your undying love to another player in the room.','Blindfold yourself and allow another player to feed you something of their choosing, and you’ve got to guess what it is.','Smell someone else’s shoes for one minute.','Text the last person you called saying, “I love you”.','Speak in an accent chosen by another player for the rest of the game.','Streak around the room for 10 seconds.','Sit on someone else’s lap for five minutes.','Allow another player to search anything they want on your phone.','Eat an item of food off of someone’s face without using any hands.','Passionately kiss the back of your hand and let someone record it.','Describe someone else in the group and others have to guess who it is.','Tell everyone about an embarrassing crush you once had.','Grab a broom and pole dance on it until someone tells you to stop.','Whisper a secret about yourself to another player in the group.','Perform your best air guitar routine without any music playing.','Twerk wearing only your underwear.','Let another player crack an egg on your head.','Dress up like the opposite sex and let another player take a picture and upload it online.','Put honey on the end of your house and then apply flour, and keep it like that for the rest of the game.','Put an ice cube down your pants and let it melt.','Pretend that you’re a cat and rub up against the other players for one minute.','Say the entire alphabet backward.','Go to a neighbor’s house and ask if they have any spare food because you’re hungry.','Make up a two-minute rap about an inanimate object in the room.','Paint your fingernails with the nail varnish in your mouth.','Call the tenth contact on your phone and tell them all about your day, for no apparent reason.','Head outside and talk to a random stranger as if they’re an old friend you haven’t seen in years.','Balance an object on your head while walking around the room for one minute.','Let the player to your left give you a new hairstyle for the rest of the game.','Tell everyone an embarrassing story about yourself.','Take a mouthful of water and tell a funny story about something that’s recently happened to you.','Get down on one knee and pretend to propose to another player.','Sing everything you want to say for the next 10 minutes.','Eat as many pieces of bread as you can in two minutes.','Lick a bar of soap from the bathroom.','Text your mom and tell them you’re pregnant, or if you’re a boy, say that you’re going to be a dad.','Go outside and carry a sign that says “kiss me if you think I’m attractive”.','Take a bite and swallow a piece of a banana skin.','Lick an animal’s fur.','Pretend that you’re a sheep for no reason whatsoever.','Write a poem about why you are the best person in the world.','Take a selfie with some old trash.','Spank the closest person to you.','Prank call your ex and tell them that you want to get back together.','Eat a sandwich filled with ingredients chosen by other players.','Put a teaspoon of salt in your mouth.','Consume as many chilies as you can in two minutes.','Head outside for a walk and talk aloud to yourself.','Tell a stranger that you’re having a bad day and need someone to talk to.','Lick the floor.','Go outside and wink at the first person you see.','Dance outside for two minutes without any music playing.','Tell everyone about a celebrity crush you have.','Take a picture of yourself pulling a funny pose and upload it to social media.','Call a random person and wish them a happy birthday.','Run around the house wearing someone else’s underwear on your head.','Have a conversation with the TV.','Act like you’re a child for two minutes.','Let another player do whatever they want to your feet.','Lick sauce off of someone else’s armpit.','Brush your teeth with hot sauce.','Drink an entire bottle of milk to yourself.','Laugh like a hyena to everything everyone says until it’s your turn.','Prank call a car breakdown company and say that you’re sad because you don’t have a car.','Do your best impersonation of Elvis Presley.','Send a direct message to the last person you wrote to on Instagram saying that they’re beautiful.','Dye your hair a color of a player’s choosing.','Clean another player’s bathroom when it next needs doing.','Give a stranger five dollars.','Wash another player’s feet.','Dip your hand in toilet water.','Apply lipstick to your mouth and teeth and walk outside.','Chug a glass of milk with curry powder.','Do a handstand with your feet against the wall and hold for 30 seconds.','Give your phone to the person on your left and let them send any message they want to anybody on your contact list.','Let the person to your right give you a temporary marker tattoo on your forehead of anything they want.','Call your sibling or cousin and speak to them for one minute entirely in an Italian accent.','Spell out your name on the wall with your butt (don’t use markers, it’s invisible).','Do the entire Gangnam Style dance using headphones so no one else hears the song.','Sing your country’s national anthem while plugging your nose.','Choose one other player and dance to the Titanic theme song while holding an orange between you (no hands). Don’t let the orange fall!','Call your neighbor and make monkey sounds for 30 seconds straight.','Call the most recent food delivery number that you have dialed and sing them the Happy Birthday song.','Make a love declaration to the player sitting opposite you.','Do a belly dance to the tune of Ricky Martin’s “La Voda Loca”','Pick the nose of the oldest person in the room.','Email your favorite teacher and tell them you love them.','Put a Skittle or M&M in the belly button of the person across from you and eat it.','Propose to the last person you sent a text message to.']
 
 
+def t1():
+	text[1].config(state="normal")
+	text[1].delete("1.0", "end")
+
+def ti(p,p2):
+	text[1].insert(END,f"\n\nIt's {p} Chance To Ask TRUTH\nOr Give DARE To {p2}.\n\n{p} Which One Will You Give ?\nTRUTH Or DARE.")
+
 def restart():
     for i in range(num):
         player_lst[i] = ""
@@ -42,19 +49,17 @@ def restart():
 
 
 def CB():
-    if cbv0.get() or cbv1.get():
-        button[0].config(state="normal")
-        for i in range(2):
-            check[i].config(state="disable")
-        if cbv0.get() == 1:
-            truth()
-        elif cbv1.get() == 1:
-            dare()
+    button[0].config(state="normal")
+    for i in range(2):
+    	check[i].config(state="disable")
+    if cbv0.get() == 1:
+        truth()
+    elif cbv1.get() == 1:
+    	dare()
 
 
 def dare():
-    text[1].config(state="normal")
-    text[1].delete("1.0", "end")
+    t1()
     text[1].insert(END, "TRY GIVING BELOW..\n\n")
     Dare = random.sample(dare_questions, 5)
     for i in range(5):
@@ -63,8 +68,7 @@ def dare():
 
 
 def truth():
-    text[1].config(state="normal")
-    text[1].delete("1.0", "end")
+    t1()
     text[1].insert(END, "TRY ASKING BELOW..\n\n")
     Truth = random.sample(truth_questions, 5)
     for i in range(5):
@@ -75,28 +79,19 @@ def truth():
 def play():
     choose_player = random.sample(player_lst, 2)
     choose_chance = random.sample(get_chance, 2)
-    text[1].config(state="normal")
-    text[1].delete("1.0", "end")
+    t1()
     text[1].insert(
         END,
-        f"{choose_player[0]} Got {choose_chance[0]} & {choose_player[1]} Got {choose_chance[1]}.",
-    )
+        f"{choose_player[0]} Got {choose_chance[0]} & {choose_player[1]} Got {choose_chance[1]}.")
     if choose_chance[0] == "BOTTOM":
-        text[1].insert(
-            END,
-            f"\n\nIt's {choose_player[0]} Chance To Ask TRUTH\nOr Give DARE To {choose_player[1]}.\n\n{choose_player[0]} Which One Will You Give ?\nTRUTH Or DARE.",
-        )
+        ti(choose_player[0],choose_player[1])
     elif choose_chance[1] == "BOTTOM":
-        text[1].insert(
-            END,
-            f"\n\nIt's {choose_player[1]} Chance To Ask TRUTH\nOr Give DARE To {choose_player[0]}.\n\n{choose_player[1]} Which One Will You Give ?\nTRUTH Or DARE.",
-        )
-    for i, c in zip([cbv0, cbv1], [text[1], button[0]]):
+        ti(choose_player[1],choose_player[0])
+    for i, c, n in zip([cbv0, cbv1], [text[1], button[0]],[0,1]):
         i.set(0)
         c.config(state="disable")
-    for i in range(2):
-        check[i].grid(row=0, column=i, sticky="s", pady=400, columnspan=2)
-        check[i].config(command=CB, state="normal")
+        check[n].grid(row=0, column=n, sticky="s", pady=400, columnspan=2)
+        check[n].config(command=CB, state="normal")
 
 
 def get2():
@@ -104,24 +99,19 @@ def get2():
         button[0].config(state=i)
     entry = Input.get()
     f = re.sub("[0-9]", "", entry)
-    f = re.sub("[^\\w]", "", f)
-    f = " ".join(f.split()).title()
+    f = re.sub("[^\\w]", "", f).title()
     player_lst.append(f)
     player_lst.remove("")
     Input.delete(0, END)
     if "" not in player_lst:
-        for i in [label[1], Input, label[0]]:
+        for i,x,y,o in zip([label[1], Input, label[0]],[button[1], button[2], text[1]],[0, 767, 0],[1391, 1391, 1500]):
             i.grid_forget()
-        text[0].place(x=0, y=0)
+            x.place(x=y, y=o)
+        text[0].place(y=0)
         text[0].insert(
-            END, f'TOTAL PLAYERS : {num}\nPLAYERS NAME : {",".join(player_lst)}'
-        )
+            END, f'TOTAL PLAYERS : {num}\nPLAYERS NAME : {",".join(player_lst)}')
         for i in [text[0], text[1]]:
             i.config(state="disable")
-        for i, x, y in zip(
-            [button[1], button[2], text[1]], [0, 767, 0], [1391, 1391, 1500]
-        ):
-            i.place(x=x, y=y)
         button[0].config(command=play, text="SPIN")
 
 
@@ -135,13 +125,11 @@ def get():
     global Input
     Input = Entry(main, width=16)
     for i, s, y, p, x in zip(
-        [Input, label[1]], ["s", "n"], [400, 0], [300, 10], ["disable", "normal"]
-    ):
+        [Input, label[1]], ["s", "n"], [400, 0], [300, 10], ["disable", "normal"]):
         i.grid(row=0, columnspan=4, sticky=s, pady=y, padx=p)
         button[0].config(state=x)
     label[1].config(
-        text="\nnote:-\ndo not include any special characters\nexcept(_)(underscore) or any numbers in the\nname or it will be removed..\n".title()
-    )
+        text="\nnote:-\ndo not include any special characters\nexcept(_)(underscore) or any numbers in the\nname or it will be removed..\n".title())
     button[0].config(command=get2)
 
 
@@ -150,29 +138,23 @@ for x, y, z, n, c in zip(
     ["green", "white", "red"],
     [0, 1, 2],
     ["NEXT", "EXIT", "RESTART"],
-    [get, main.destroy, restart],
-):
+    [get, main.destroy, restart]):
     Label(
-        main, text=x, fg=y, bg="black", font=("Helvetica", 23, "bold", "italic")
-    ).grid(row=0, column=z, pady=630)
+        main, text=x, fg=y, bg="black", font=("Helvetica", 23, "bold", "italic")).grid(row=0, column=z, pady=630)
     btn = Button(main, text=n, fg="white", bg="black", bd=10, command=c)
     button.append(btn)
 
-for i, s, x, y, h, n, c, o in zip(
+for i, s, h, n, c, o in zip(
     ["How Many Players :", ""],
     [10, 8],
-    ["NEXT", "EXIT"],
-    [get, restart],
     [2, 10],
     ["TRUTH", "DARE"],
     [cbv0, cbv1],
-    ["green", "red"],
-):
+    ["green", "red"]):
     l = Label(main, text=i, fg="white", bg="black", font=("Helvetica", s))
     txt = Text(main, wrap=NONE, width=44, bg="black", fg="white", height=h)
     cb = Checkbutton(
-        main, text=n, variable=c, onvalue=True, offvalue=False, bg="black", fg=o
-    )
+        main, text=n, variable=c, onvalue=True, offvalue=False, bg="black", fg=o)
     check.append(cb)
     label.append(l)
     text.append(txt)
